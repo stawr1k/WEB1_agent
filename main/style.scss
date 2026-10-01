@@ -1,0 +1,2069 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+:root{
+    --black_bg: #0F0F0F;
+    --center_bg: #1A1A1A;
+    --gray_text: #81807E;
+    --orange_text: #E7BEB1;
+    --orange: #CE7D63;
+    --white-orange: #F9EFEC;
+}
+
+.roboto-mono {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+
+.roboto-flex {
+  font-family: "Roboto Flex", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "wdth" 100,
+    "GRAD" 0,
+    "XOPQ" 96,
+    "XTRA" 468,
+    "YOPQ" 79,
+    "YTAS" 750,
+    "YTDE" -203,
+    "YTFI" 738,
+    "YTLC" 514,
+    "YTUC" 712;
+}
+
+body{
+    background: var(--black_bg);
+}
+
+header{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .center_m1{
+        width: 95%;
+        height: 70%;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border-radius: 16px;
+        background: var(--center_bg);
+
+        .center{
+            width: 90%;
+            height: 80%;
+            
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            nav{
+                width: 70%;
+                height: 80%;
+
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                
+                ul{
+                    width: 80%;
+                    height: 100%;
+
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    a{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 100%;
+                        width: min-content;
+                        padding: 2.5%;
+                        font-family: "Roboto Mono";
+                        font-size: 18px;
+                        color: var(--gray_text) ;
+                        background: var(--black_bg);
+                        border-radius: 12px;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        transition: 0.5s all ease;
+
+                        &:hover{
+                            background-color: #ad5135;
+                        }
+                    }
+
+                }
+
+                button{
+                    border-style: none;
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100%;
+                    width: 18%;
+                    padding: 2.5%;
+                    font-family: "Roboto Mono";
+                    font-size: 16px;
+                    color: var(--gray_text) ;
+                    background: var(--black_bg);
+                    border-radius: 12px;
+                    transition: 0.5s all ease;
+                    text-transform: uppercase;
+                 &:hover{
+                        background-color: #ad5135;
+                    }
+                }
+            }
+        }
+    } 
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black_bg);
+
+    .cneter{
+        width: 95%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        .up{
+            width: 100%;
+            height: 70%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            .left{
+                width: 55%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: var(--center_bg);
+                border-radius: 20px;
+
+                .center{
+                    width: 90%;
+                    height: 80%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .verh{
+                        width: 100%;
+                        height: 30%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-start;
+                        align-items: center;
+
+                        h1{
+                            width: 50%;
+                            font-family: "Roboto Flex";
+                            font-size: 96px;
+                            color: var(--white-orange);
+                            text-align: left;
+                            width: 60%;
+                        }
+
+                        button{
+                            position: relative;
+                            right: 20%;
+                            bottom: 25%;
+                            width: 40%;
+                            height: 60%;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: center;
+                            background-color: transparent;
+                            border-style: none;
+                            cursor: pointer;
+
+
+                            p{
+                                font-family: "Roboto Mono";
+                                font-size: 16px;
+                                color: var(--orange);
+                                text-align: left;
+                            }
+                        }
+                    }
+
+                    p{
+                        width: 100%;
+                        height: 20%;
+                        font-family: "Roboto Mono";
+                        text-align: left;
+                        font-size: 16px;
+                        color: var(--gray_text);
+                    }
+
+                    .hiz{
+                        width: 100%;
+                        height: 15%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        overflow: hidden;
+                        background: var(--black_bg);
+                        border-radius: 15px;
+
+                        ul{
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            align-items: center;
+                            gap: 5%;
+
+
+                            li{
+                                font-family: "Roboto Mono";
+                                font-size: 14px;
+                                color: var(--gray_text);
+                                text-align: left;
+                                position: relative;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .right{
+                width: 43%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-end;
+
+                .verh{
+                    width: 100%;
+                    height: 75%;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: flex-start;
+
+                    button{
+                        width: 100%;
+                        height: 100%;
+                        border: none;
+                        cursor: pointer;
+                        border-top-left-radius: 14px;
+                        border-top-right-radius: 14px;
+                        background-image: url(../resource/image/AAAAAAAAAAAAA.png);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: center;
+                        border-style: none;
+                    }
+                }
+
+                .niz{
+                    width: 100%;
+                    height: 25%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: var(--center_bg);
+                    border-bottom-left-radius: 14px;
+                    border-bottom-right-radius: 14px;
+                    
+
+                    .center{
+                        width: 90%;
+                        height: 80%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: flex-start;
+                        
+                        border-radius: 15px;
+
+                        h3{
+                            font-family: "Roboto Flex";
+                            font-size: 24px;
+                            color: #ffffff;
+                            text-align: left;
+                        }
+
+                        p{
+                            font-family: "Roboto Mono";
+                            font-size: 14px;
+                            color: var(--gray_text);
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+        }
+
+        .down{
+            width: 100%;
+            height: 25%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid var(--center_bg);
+            border-radius: 15px;
+
+            .center{
+                width: 97%;
+                height: 87%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                
+                
+
+                div{
+                    width: 15%;
+                    height: 90%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    background: var(--center_bg);
+                    border-radius: 15px;
+
+                    p{
+                        font-family: "Roboto Mono";
+                        font-size: 12px;
+                        color: var(--gray_text);
+                        text-align: center;
+                        text-transform: uppercase;
+                    }
+
+                    h2{
+                        font-family: "Roboto Flex";
+                        font-size: 48px;
+                        color: var(--orange);
+                        text-align: center;
+                    }
+                }
+
+                button{
+                    width: 15%;
+                    height: 90%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 15px;
+                    background: var(--center_bg);
+                    border-style: none;
+                    border-radius: 15px;
+                    cursor: pointer;
+
+                    // img{
+                    //     width: 24px;
+                    //     height: 24px;
+                    //     object-fit: contain;
+                    // }
+
+                    p{
+                        font-family: "Roboto Mono";
+                        font-size: 14px;
+                        color: var(--gray_text);
+                        text-transform: uppercase;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.reason{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black_bg);
+    
+
+    .down_huina{
+        width: 95%;
+        height: 92%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        border: 1px solid var(--center_bg);
+        border-radius: 24px;
+        .cneter{
+            width: 95%;
+            height: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+            .up{
+                width: 100%;
+                height: 30%;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                background: var(--center_bg);
+                border-radius: 20px;
+
+                padding: 3%;
+
+                h1{
+                    font-family: "Roboto Flex";
+                    font-size: 48px;
+                    color: #ffffff;
+                    text-align: left;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                }
+            }
+
+            .down{
+                width: 100%;
+                height: 65%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+                article{
+                    width: 23%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: var(--center_bg);
+                    border: 1px solid var(--center_bg);
+                    border-radius: 15px;
+
+                    .center{
+                        width: 80%;
+                        height: 80%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        align-items: flex-start;
+
+                        h3{
+                            font-family: "Roboto Flex";
+                            font-size: 20px;
+                            color: #ffffff;
+                            text-align: left;
+                            height: 25%;
+                            font-weight: 500;
+                            text-transform: uppercase;
+
+                        }
+
+                        p{
+                            font-family: "Roboto Mono";
+                            font-size: 14px;
+                            color: var(--gray_text);
+                            text-align: left;
+                            height: 60%;
+                        }
+
+                        div{
+                            width: 100%;
+                            height: 15%;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            align-items: center;
+                            
+
+                            button{
+                                width:45%;
+                                height: 100%;
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-between;
+                                align-items: center;
+                                background-color: transparent;
+                                border: none;
+                                cursor: pointer;
+                                transition: 0.5s all ease;
+
+                                img{
+                                    width: 42px;
+                                    height: 42px;
+                                }
+
+                                p{
+                                    font-family: "Roboto Mono";
+                                    font-size: 14px;
+                                    color: #ffffff;
+                                    text-align: left;
+                                }
+
+                                &:hover{
+                                    transform: scale(1.05);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.ourservice{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black_bg);
+
+    .govno_govna{
+        width: 95%;
+        height: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid var(--center_bg);
+        border-radius: 24px;
+
+        .center{
+            width: 95%;
+            height: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+            .up{
+                width: 100%;
+                height: 15%;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                background: var(--center_bg);
+                border-radius: 20px;
+                padding: 3%;
+
+                h1{
+                    font-family: "Roboto Flex";
+                    font-size: 36px;
+                    color: var(--white-orange);
+                    text-align: left;
+                    text-transform: uppercase;
+                }
+            }
+
+            .down{
+                width: 100%;
+                height: 80%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                gap: 2%;
+
+                article{
+                    width: 48%;
+                    height: 45%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: var(--center_bg);
+                    border: 1px solid var(--center_bg);
+                    border-radius: 15px;
+
+                    .center{
+                        width: 80%;
+                        height: 70%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        align-items: flex-start;
+
+                        .verh{
+                            width: 100%;
+                            height: 25%;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            .left{
+                                width: 60%;
+                                height: 100%;
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: flex-start;
+                                align-items: center;
+                                gap: 15px;
+
+                                img{
+                                    width: 55px;
+                                    height: 55px;
+                                    object-fit: contain;
+                                }
+
+                                h6{
+                                    font-family: "Roboto Flex";
+                                    font-size: 30px;
+                                    color: var(--white-orange);
+                                    text-align: left;
+                                    text-transform: uppercase;
+                                    font-weight: 100;
+                                }
+                            }
+
+                            .right{
+                                width: 40%;
+                                height: 60%;
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: center;
+                                align-items: center;
+                                gap: 10px;
+                                background-color: transparent;
+                                border: none;
+                                cursor: pointer;
+                                transition: 0.5s all ease;
+
+                                img{
+                                    width: 42px;
+                                    height: 42px;
+                                    object-fit: contain;
+                                }
+
+                                p{
+                                    font-family: "Roboto Mono";
+                                    font-size: 20px;
+                                    color: var(--gray_text);
+                                    text-align: left;
+                                    text-transform: uppercase;
+                                }
+
+                                &:hover{
+                                    transform: scale(1.05);
+                                }
+                            }
+                        }
+
+                        .niz{
+                            width: 100%;
+                            height: 55%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            align-items: flex-start;
+
+                            p{
+                                font-family: "Roboto Mono";
+                                font-size: 14px;
+                                color: var(--gray_text);
+                                text-align: left;
+                                height: 50%;
+                            }
+
+                            .stage_for{
+                                width: 100%;
+                                height: 45%;
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-between;
+                                align-items: center;
+
+                                .empty_div{
+                                    width: 50%;
+                                    height: 100%;
+                                }
+
+                                h3{
+                                    font-family: "Roboto Flex";
+                                    font-size: 30px;
+                                    color: var(--white-orange);
+                                    text-align: right;
+                                    text-transform: uppercase;
+                                    font-weight: 500;
+                                    width: 50%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.outworks{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black_bg);
+
+    .cneter{
+        width: 95%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        .up{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+            .center{
+                width: 100%;
+                height: 12%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                background: var(--center_bg);
+                border-radius: 20px;
+                padding: 3%;
+
+                h1{
+                    font-family: "Roboto Flex";
+                    font-size: 36px;
+                    color: var(--white-orange);
+                    text-align: left;
+                    text-transform: uppercase;
+                }
+
+                button{
+                    width: 15%;
+                    height: 70%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+                    background-color: transparent;
+                    border: 1px solid var(--center_bg);
+                    border-radius: 100px;
+                    cursor: pointer;
+                    transition: 0.5s all ease;
+
+                    img{
+                        width: 42px;
+                        height: 42px;
+                        object-fit: contain;
+                    }
+
+                    p{
+                        font-family: "Roboto Mono";
+                        font-size: 14px;
+                        color: var(--gray_text);
+                        text-transform: uppercase;
+                        text-align: left;
+                    }
+
+                    &:hover{
+                        transform: scale(1.05);
+                    }
+                }
+            }
+
+            .down{
+                width: 100%;
+                height: 85%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 24px;
+
+                .center2{
+                    width: 97%;
+                    height: 95%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 2%;
+
+                    article{
+                        width: 100%;
+                        height: 48%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        border: 1px solid var(--center_bg);
+                        border-radius: 15px;
+
+                        .huina{
+                            width: 95%;
+                            height: 85%;
+
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            align-items: center;
+                        
+
+                            .left_part{
+                                width: 28%;
+                                height: 100%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                background: var(--center_bg);
+                                border-radius: 14px;
+
+                                .center_parta{
+                                    width: 90%;
+                                    height: 90%;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: space-between;
+                                    align-items: flex-start;
+
+                                    .verh{
+                                        width: 100%;
+                                        height: 20%;
+                                        display: flex;
+                                        flex-direction: row;
+                                        justify-content: space-between;
+                                        align-items: center;
+
+                                        img{
+                                            width: 45px;
+                                            height: 45px;
+
+                                        }
+
+                                        h3{
+                                            font-family: "Roboto Flex";
+                                            font-size: 22px;
+                                            color: var(--white-orange);
+                                            text-align: left;
+                                            text-transform: uppercase;
+                                            width: 45%;
+                                        }
+
+                                        button{
+                                            width: 35%;
+                                            height: 70%;
+                                            display: flex;
+                                            flex-direction: row;
+                                            justify-content: center;
+                                            align-items: center;
+                                            gap: 8px;
+                                            background-color: transparent;
+                                            border: 1px solid var(--center_bg);
+                                            border-radius: 100px;
+                                            cursor: pointer;
+                                            transition: 0.5s all ease;
+
+                                            img{
+                                                width: 42px;
+                                                height: 42px;
+                                                object-fit: contain;
+                                            }
+
+                                            p{
+                                                font-family: "Roboto Mono";
+                                                font-size: 12px;
+                                                color: var(--gray_text);
+                                                text-transform: uppercase;
+                                                text-align: left;
+                                            }
+
+                                            &:hover{
+                                                transform: scale(1.05);
+                                            }
+                                        }
+                                    }
+
+                                    .category{
+                                        width: 100%;
+                                        height: 20%;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: space-between;
+                                        align-items: flex-start;
+
+                                        div{
+                                            width: max-content;
+                                            height: 45%;
+                                            display: flex;
+                                            flex-direction: row;
+                                            justify-content: flex-start;
+                                            align-items: center;
+                                            gap: 10px;
+                                            background: var(--black_bg);
+                                            border-radius: 100px;
+                                            padding: 0 15px;
+
+                                            span{
+                                                font-family: "Roboto Mono";
+                                                font-size: 12px;
+                                                color: var(--gray_text);
+                                                text-transform: uppercase;
+                                            }
+
+                                            li{
+                                                font-family: "Roboto Mono";
+                                                font-size: 12px;
+                                                color: var(--white-orange);
+                                                list-style: none;
+                                                
+                                                text-transform: uppercase;
+                                            }
+                                        }
+                                    }
+
+                                    >p{
+                                        width: 100%;
+                                        height: 40%;
+                                        font-family: "Roboto Mono";
+                                        font-size: 14px;
+                                        color: var(--gray_text);
+                                        text-align: left;
+                                    }
+                                }
+                            }
+
+                            .center_part{
+                                width: 35%;
+                                height: 100%;
+                                object-fit: cover;
+                                border-radius: 15px;
+                            }
+
+                            .right_part{
+                                width: 28%;
+                                height: 100%;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-between;
+                                align-items: center;
+
+                                .verh{
+                                    width: 100%;
+                                    height: 50%;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    background: var(--center_bg);
+                                    border-radius: 15px;
+
+                                    .center_parta{
+                                        width: 80%;
+                                        height: 60%;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: space-between;
+                                        align-items: flex-start;
+
+                                        h6{
+                                            font-family: "Roboto Mono";
+                                            font-size: 14px;
+                                            color: var(--white-orange);
+                                            text-align: left;
+                                            text-transform: uppercase;
+                                        }
+
+                                        .stack{
+                                            width: 100%;
+                                            height: 70%;
+                                            display: flex;
+                                            flex-direction: row;
+                                            flex-wrap: wrap;
+                                            justify-content: flex-start;
+                                            align-items: flex-start;
+                                            gap: 10px;
+
+                                            div{
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                                background: var(--black_bg);
+                                                border-radius: 100px;
+                                                padding: 8px 15px;
+
+                                                p{
+                                                    font-family: "Roboto Mono";
+                                                    font-size: 12px;
+                                                    color: var(--gray_text);
+                                                    text-align: center;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .team_members{
+                                    width: 100%;
+                                    height: 25%;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    background: var(--center_bg);
+                                    border-radius: 15px;
+
+                                    .center_parta{
+                                        width: 90%;
+                                        height: 90%;
+                                        display: flex;
+                                        flex-direction: row;
+                                        justify-content: space-between;
+                                        align-items: center;
+
+                                        h6{
+                                            width: max-content;
+                                            font-family: "Roboto Mono";
+                                            font-size: 14px;
+                                            color: var(--white-orange);
+                                            text-align: left;
+                                            text-transform: uppercase;
+                                            font-weight: 300;
+                                        }
+
+                                        div{
+                                            width: 60%;
+                                            height: 70%;
+                                            display: flex;
+                                            flex-direction: row;
+                                            justify-content: flex-start;
+                                            align-items: center;
+                                            gap: 10px;
+
+                                            img{
+                                                width: 32px;
+                                                height: 32px;
+                                                border-radius: 100%;
+                                                object-fit: cover;
+                                                border: 2px solid var(--center_bg);
+                                            }
+                                        }
+                                    }
+                                }
+
+                                button{
+                                    width: 100%;
+                                    height: 20%;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    border-style: none;
+                                    border-radius: 12px;
+                                    cursor: pointer;
+                                    font-family: "Roboto Mono";
+                                    font-size: 14px;
+                                    color: var(--black_bg);
+                                    background-color: var(--orange);
+                                    text-transform: uppercase;
+                                    transition: 0.5s all ease;
+
+                                    &:hover{
+                                        background: #ad5135;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.testimonials{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black_bg);
+
+    .huhuhu{
+        width: 95%;
+        height: 92%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid var(--center_bg);
+        border-radius: 24px;
+
+        .cneter{
+            width: 95%;
+            height: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+            .up{
+                width: 100%;
+                height: 20%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .center{
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    background: var(--center_bg);
+                    border-radius: 20px;
+                    padding: 3%;
+
+                    h1{
+                        font-family: "Roboto Flex";
+                        font-size: 36px;
+                        color: var(--white-orange);
+                        text-align: left;
+                        text-transform: uppercase;
+                    }
+
+                    button{
+                        width: 18%;
+                        height: 70%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 10px;
+                        background-color: transparent;
+                        border: 1px solid var(--center_bg);
+                        border-radius: 100px;
+                        cursor: pointer;
+
+                        transition: 0.5s all ease;
+
+                        img{
+                            width: 42px;
+                            height: 42px;
+                            object-fit: contain;
+                        }
+
+                        p{
+                            font-family: "Roboto Mono";
+                            font-size: 14px;
+                            color: var(--gray_text);
+                            text-transform: uppercase;
+                            text-align: left;
+                        }
+
+                        &:hover{
+                            transform: scale(1.05);
+                        }
+                    }
+                }
+            }
+
+            .down{
+                width: 100%;
+                height: 75%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                gap: 2%;
+
+                article{
+                    width: 23%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    background: var(--center_bg);
+                    border: 1px solid var(--center_bg);
+                    border-radius: 15px;
+                    overflow: hidden;
+
+                    .verh{
+                        width: 100%;
+                        height: 65%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        .center{
+                            width: 80%;
+                            height: 60%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            align-items: flex-start;
+
+                            h6{
+                                font-family: "Roboto Flex";
+                                font-size: 18px;
+                                color: var(--white-orange);
+                                text-align: left;
+                                text-transform: uppercase;
+                                font-weight: 500;
+                            }
+
+                            p{
+                                font-family: "Roboto Mono";
+                                font-size: 13px;
+                                color: var(--gray_text);
+                                text-align: left;
+                            }
+                        }
+                    }
+
+                    .niz{
+                        width: 100%;
+                        height: 35%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background: #1F1F1F;
+
+                        .center{
+                            width: 80%;
+                            height: 60%;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            img{
+                                width: 45px;
+                                height: 45px;
+                                border-radius: 100%;
+                                object-fit: cover;
+                            }
+
+                            div{
+                                width: 45%;
+                                height: 80%;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: flex-start;
+
+                                h6{
+                                    font-family: "Roboto Flex";
+                                    font-size: 14px;
+                                    color: var(--white-orange);
+                                    text-align: left;
+                                }
+
+                                p{
+                                    font-family: "Roboto Mono";
+                                    font-size: 11px;
+                                    color: var(--gray_text);
+                                    text-align: left;
+                                }
+                            }
+
+                            button{
+                                width: 40px;
+                                height: 40px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                background-color: transparent;
+                                border: 1px solid var(--center_bg);
+                                border-radius: 100%;
+                                cursor: pointer;
+
+                                img{
+                                    width: 18px;
+                                    height: 18px;
+                                    object-fit: contain;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.qAa{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black_bg);
+
+    .cneter{
+        width: 95%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        .up{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+            .center{
+                width: 100%;
+                height: 12%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                background: var(--center_bg);
+                border-radius: 20px;
+                padding: 3%;
+
+                h1{
+                    font-family: "Roboto Flex";
+                    font-size: 36px;
+                    color: var(--white-orange);
+                    text-align: left;
+                    text-transform: uppercase;
+                }
+
+                button{
+                    width: 15%;
+                    height: 70%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+                    background-color: transparent;
+                    border: 1px solid var(--center_bg);
+                    border-radius: 100px;
+                    cursor: pointer;
+
+                    img{
+                        width: 24px;
+                        height: 24px;
+                        object-fit: contain;
+                    }
+
+                    p{
+                        font-family: "Roboto Mono";
+                        font-size: 14px;
+                        color: var(--gray_text);
+                        text-transform: uppercase;
+                        text-align: left;
+                    }
+                }
+            }
+
+            .down{
+                width: 100%;
+                height: 85%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-start;
+                gap: 2%;
+
+                .left{
+                    width: 62%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 2%;
+
+                    article{
+                        width: 100%;
+                        height: 18%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background: var(--center_bg);
+                        border: 1px solid var(--center_bg);
+                        border-radius: 15px;
+
+                        .center_art{
+                            width: 90%;
+                            height: 90%;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            span{
+                                font-family: "Roboto Flex";
+                                font-size: 16px;
+                                color: var(--white-orange);
+                                text-align: left;
+                                width: 85%;
+                            }
+
+                            img{
+                                width: 40px;
+                                height: 40px;
+                                object-fit: contain;
+                            }
+                        }
+
+                        &.active{
+                            height: 28%;
+
+                            .center_art{
+                                .txt_content{
+                                    width: 85%;
+                                    height: 100%;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: space-between;
+                                    align-items: flex-start;
+
+                                    span{
+                                        width: 100%;
+                                        height: 40%;
+                                        display: flex;
+                                        align-items: center;
+                                        border-bottom: 1px solid #262626;
+                                    }
+
+                                    p{
+                                        width: 100%;
+                                        height: 50%;
+                                        font-family: "Roboto Mono";
+                                        font-size: 13px;
+                                        color: var(--gray_text);
+                                        text-align: left;
+                                    }
+                                }
+
+                                button{
+                                    width: 40px;
+                                    height: 40px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    background-color: transparent;
+                                    border: 1px solid var(--orange);
+                                    border-radius: 100%;
+                                    cursor: pointer;
+
+                                    img{
+                                        width: 18px;
+                                        height: 18px;
+                                        object-fit: contain;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .right{
+                    width: 36%;
+                    height: 94%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .center_w{
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        align-items: center;
+                        background: var(--center_bg);
+                        border-radius: 15px;
+                        padding: 5%;
+
+                        .verh{
+                            width: 100%;
+                            height: 15%;
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            border-bottom: 1px solid #262626;
+
+                            h4{
+                                font-family: "Roboto Flex";
+                                font-size: 22px;
+                                color: var(--white-orange);
+                                text-align: left;
+                                text-transform: uppercase;
+                            }
+                        }
+
+                        .down{
+                            width: 100%;
+                            height: 80%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            div{
+                                width: 100%;
+                                height: 22%;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-between;
+                                align-items: flex-start;
+
+                                p{
+                                    font-family: "Roboto Mono";
+                                    font-size: 18px;
+                                    color: var(--white-orange);
+                                    text-align: left;
+                                    text-transform: uppercase;
+                                }
+
+                                input{
+                                    width: 100%;
+                                    height: 60%;
+                                    background: var(--black_bg);
+                                    border: none;
+                                    border-radius: 10px;
+                                    padding: 0 15px;
+                                    font-family: "Roboto Mono";
+                                    font-size: 13px;
+                                    color: var(--gray_text);
+                                    outline: none;
+                                    text-transform: uppercase;
+
+                                    &::placeholder{
+                                        color: var(--gray_text);
+                                    }
+                                }
+
+                                &:last-of-type{
+                                    height: 25%;
+
+                                    input{
+                                        height: 80%;
+                                        padding: 15px;
+                                        resize: none;
+                                        display: flex;
+                                        justify-content: flex-start;
+                                    }
+                                }
+                            }
+
+                            button{
+                                width: 100%;
+                                height: 15%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                background: var(--orange_text);
+                                border-style: none;
+                                border-radius: 12px;
+                                cursor: pointer;
+                                font-family: "Roboto Mono";
+                                font-size: 14px;
+                                color: var(--black_bg);
+                                text-transform: uppercase;
+                                transition: 0.5s all ease;
+                                background-color: var(--orange);
+                                &:hover{
+                                    background-color: #ad5135;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer{
+    width: 100%;
+    height: 130vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black_bg);
+
+    .main_center{
+        width: 95%;
+        height: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3%;
+
+        .digital{
+            width: 100%;
+            height: 25%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: var(--orange);
+            border-radius: 15px;
+            padding: 4% 5%;
+
+            .cneter{
+                width: 95%;
+                height: 60%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+                .puding{
+                    width: 70%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: flex-start;
+
+                    h1{
+                        font-family: "Roboto Flex";
+                        font-size: 48px;
+                        color: var(--black_bg);
+                        text-align: left;
+                        text-transform: uppercase;
+                        margin-bottom: 20px;
+                    }
+
+                    p{
+                        font-family: "Roboto Mono";
+                        font-size: 14px;
+                        color: var(--black_bg);
+                        text-align: left;
+                    }
+                }
+
+                .duding{
+                    width: 30%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: flex-end;
+
+                    button{
+                        width: 80%;
+                        height: 60px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 10px;
+                        background: var(--black_bg);
+                        border: none;
+                        border-radius: 12px;
+                        cursor: pointer;
+                        transition: 0.5s all ease;
+
+                        p{
+                            font-family: 'Roboto Mono';
+                            font-size: 14px;
+                            color: var(--white-orange);
+                            text-transform: uppercase;
+                        }
+
+                        img{
+                            width: 20px;
+                            height: 20px;
+                            object-fit: contain;
+                        }
+
+                        &:hover{
+                            background: var();
+                        }
+                    }
+                }
+            }
+        }
+
+        .lenta{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            overflow: hidden;
+            background: var(--center_bg);
+            border-radius: 12px;
+            padding: 2%;
+
+            li{
+                font-family: "Roboto Mono";
+                font-size: 14px;
+                color: var(--gray_text);
+                text-transform: uppercase;
+                list-style: none;
+                white-space: nowrap;
+                padding: 0 20px;
+                position: relative;
+
+                &::after{
+                    content: "•";
+                    color: var(--orange);
+                    position: absolute;
+                    right: 0;
+                }
+
+                &:last-child::after{
+                    content: "";
+                }
+            }
+        }
+
+        .sam_footer{
+            width: 100%;
+            height: 65%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 2%;
+
+            .left{
+                width: 40%;
+                height: 100%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                gap: 2%;
+
+                article{
+                    width: 48%;
+                    height: 48%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: var(--center_bg);
+                    border: 1px solid var(--center_bg);
+                    border-radius: 15px;
+
+                    .center_art{
+                        width: 80%;
+                        height: 60%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        align-items: flex-start;
+
+                        .verh{
+                            width: 100%;
+                            height: 25%;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            img{
+                                width: 4vw;
+                                height: 4vw;
+                                object-fit: contain;
+                            }
+
+                            button{
+                                width: 2.5vw;
+                                height: 2.5vw;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                background-color: transparent;
+                                border: 1px solid var(--gray_text);
+                                border-radius: 100%;
+                                cursor: pointer;
+
+                                img{
+                                    width: 50%;
+                                    height: auto;
+                                }
+                            }
+                        }
+
+                        .niz{
+                            width: 100%;
+                            height: 25%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: flex-start;
+                            align-items: flex-start;
+
+                            h6{
+                                font-family: "Roboto Flex";
+                                font-size: 30px;
+                                color: var(--white-orange);
+                                text-align: left;
+                                text-transform: uppercase;
+                                margin-bottom: 10px;
+                                font-weight: 300;
+                            }
+
+                            p{
+                                font-family: "Roboto Mono";
+                                font-size: 13px;
+                                color: var(--gray_text);
+                                text-align: left;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .right{
+                width: 58%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                gap: 2%;
+
+                .verh{
+                    width: 100%;
+                    height: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: var(--center_bg);
+                    border-radius: 15px;
+
+                    .center_vse{
+                        width: 80%;
+                        height: 50%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: flex-start;
+
+                        ul{
+                            width: 23%;
+                            height: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            align-items: flex-start;
+
+                            h3{
+                                font-family: "Roboto Mono";
+                                font-size: 16px;
+                                color: var(--white-orange);
+                                text-align: left;
+                                margin-bottom: 20px;
+                            }
+
+                            a{
+                                font-family: "Roboto Mono";
+                                font-size: 13px;
+                                color: var(--gray_text);
+                                text-decoration: none;
+                                margin-bottom: 12px;
+                                transition: 0.3s all ease;
+
+                                &:hover{
+                                    color: var(--orange_text);
+                                }
+                            }
+
+                            div{
+                                width: 100%;
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: flex-start;
+                                align-items: center;
+                                gap: 10px;
+                                margin-bottom: 12px;
+
+                                a{
+                                    margin-bottom: 0;
+                                }
+
+                                p{
+                                    font-family: "Roboto Mono";
+                                    font-size: 11px;
+                                    color: var(--gray_text);
+                                    background: var(--black_bg);
+                                    padding: 3px 8px;
+                                    border-radius: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .sered{
+                    width: 100%;
+                    height: 30%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: var(--center_bg);
+                    border-radius: 15px;
+
+                    .center_sered{
+                        width: 80%;
+                        height: 80%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .pravo{
+                            width: 50%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: flex-start;
+
+                            h6{
+                                font-family: "Roboto Mono";
+                                font-size: 12px;
+                                color: var(--gray_text);
+                                text-align: left;
+                                text-transform: uppercase;
+                                margin-bottom: 10px;
+                            }
+
+                            h3{
+                                font-family: "Roboto Flex";
+                                font-size: 24px;
+                                color: var(--white-orange);
+                                text-align: left;
+                                text-transform: uppercase;
+                            }
+                        }
+
+                        .levo{
+                            width: 50%;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: flex-end;
+                            align-items: center;
+                            gap: 15px;
+
+                            input{
+                                width: 70%;
+                                height: 50px;
+                                background: var(--center_bg);
+                                border: none;
+                                padding: 0 20px;
+                                font-family: "Roboto Mono";
+                                font-size: 13px;
+                                color: var(--gray_text);
+                                outline: none;
+                                border-bottom: 1px solid var(--gray_text);
+
+                                &::placeholder{
+                                    color: var(--gray_text);
+                                }
+                            }
+
+                            button{
+                                width: 2.5vw;
+                                height: 2.5vw;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                background-color: transparent;
+                                border: 1px solid var(--gray_text);
+                                border-radius: 100%;
+                                cursor: pointer;
+
+                                img{
+                                    width: 50%;
+                                    height: auto;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .niz{
+                    width: 100%;
+                    height: 15%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: var(--center_bg);
+                    border-radius: 15px;
+
+                    .center_n{
+                        width: 80%;
+                        height: 80%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        p{
+                            font-family: "Roboto Mono";
+                            font-size: 13px;
+                            color: var(--gray_text);
+                            text-align: left;
+                        }
+
+                        div{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: flex-end;
+                            align-items: center;
+                            gap: 20px;
+
+                            p{
+                                font-family: "Roboto Mono";
+                                font-size: 13px;
+                                color: var(--gray_text);
+                                cursor: pointer;
+                            }
+
+                            a{
+                                font-family: "Roboto Mono";
+                                font-size: 13px;
+                                color: var(--gray_text);
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

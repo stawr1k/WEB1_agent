@@ -1,0 +1,1838 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+:root {
+  --black_bg: #0F0F0F;
+  --center_bg: #1A1A1A;
+  --gray_text: #81807E;
+  --orange_text: #E7BEB1;
+  --orange: #CE7D63;
+  --white-orange: #F9EFEC;
+}
+
+.roboto-mono {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.roboto-flex {
+  font-family: "Roboto Flex", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "slnt" 0, "wdth" 100, "GRAD" 0, "XOPQ" 96, "XTRA" 468, "YOPQ" 79, "YTAS" 750, "YTDE" -203, "YTFI" 738, "YTLC" 514, "YTUC" 712;
+}
+
+body {
+  background: var(--black_bg);
+}
+
+header {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .center_m1 {
+  width: 95%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  background: var(--center_bg);
+}
+header .center_m1 .center {
+  width: 90%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header .center_m1 .center nav {
+  width: 70%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header .center_m1 .center nav ul {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header .center_m1 .center nav ul a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: -moz-min-content;
+  width: min-content;
+  padding: 2.5%;
+  font-family: "Roboto Mono";
+  font-size: 18px;
+  color: var(--gray_text);
+  background: var(--black_bg);
+  border-radius: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s all ease;
+}
+header .center_m1 .center nav ul a:hover {
+  background-color: #ad5135;
+}
+header .center_m1 .center nav button {
+  border-style: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 18%;
+  padding: 2.5%;
+  font-family: "Roboto Mono";
+  font-size: 16px;
+  color: var(--gray_text);
+  background: var(--black_bg);
+  border-radius: 12px;
+  transition: 0.5s all ease;
+  text-transform: uppercase;
+}
+header .center_m1 .center nav button:hover {
+  background-color: #ad5135;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black_bg);
+}
+.main .cneter {
+  width: 95%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .cneter .up {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.main .cneter .up .left {
+  width: 55%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--center_bg);
+  border-radius: 20px;
+}
+.main .cneter .up .left .center {
+  width: 90%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .cneter .up .left .center .verh {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.main .cneter .up .left .center .verh h1 {
+  width: 50%;
+  font-family: "Roboto Flex";
+  font-size: 96px;
+  color: var(--white-orange);
+  text-align: left;
+  width: 60%;
+}
+.main .cneter .up .left .center .verh button {
+  position: relative;
+  right: 20%;
+  bottom: 25%;
+  width: 40%;
+  height: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border-style: none;
+  cursor: pointer;
+}
+.main .cneter .up .left .center .verh button p {
+  font-family: "Roboto Mono";
+  font-size: 16px;
+  color: var(--orange);
+  text-align: left;
+}
+.main .cneter .up .left .center p {
+  width: 100%;
+  height: 20%;
+  font-family: "Roboto Mono";
+  text-align: left;
+  font-size: 16px;
+  color: var(--gray_text);
+}
+.main .cneter .up .left .center .hiz {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: var(--black_bg);
+  border-radius: 15px;
+}
+.main .cneter .up .left .center .hiz ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5%;
+}
+.main .cneter .up .left .center .hiz ul li {
+  font-family: "Roboto Mono";
+  font-size: 14px;
+  color: var(--gray_text);
+  text-align: left;
+  position: relative;
+}
+.main .cneter .up .right {
+  width: 43%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.main .cneter .up .right .verh {
+  width: 100%;
+  height: 75%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.main .cneter .up .right .verh button {
+  width: 100%;
+  height: 100%;
+  border: none;
+  cursor: pointer;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  background-image: url(../resource/image/AAAAAAAAAAAAA.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-style: none;
+}
+.main .cneter .up .right .niz {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--center_bg);
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+.main .cneter .up .right .niz .center {
+  width: 90%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 15px;
+}
+.main .cneter .up .right .niz .center h3 {
+  font-family: "Roboto Flex";
+  font-size: 24px;
+  color: #ffffff;
+  text-align: left;
+}
+.main .cneter .up .right .niz .center p {
+  font-family: "Roboto Mono";
+  font-size: 14px;
+  color: var(--gray_text);
+  text-align: left;
+}
+.main .cneter .down {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--center_bg);
+  border-radius: 15px;
+}
+.main .cneter .down .center {
+  width: 97%;
+  height: 87%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .cneter .down .center div {
+  width: 15%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--center_bg);
+  border-radius: 15px;
+}
+.main .cneter .down .center div p {
+  font-family: "Roboto Mono";
+  font-size: 12px;
+  color: var(--gray_text);
+  text-align: center;
+  text-transform: uppercase;
+}
+.main .cneter .down .center div h2 {
+  font-family: "Roboto Flex";
+  font-size: 48px;
+  color: var(--orange);
+  text-align: center;
+}
+.main .cneter .down .center button {
+  width: 15%;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  background: var(--center_bg);
+  border-style: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.main .cneter .down .center button p {
+  font-family: "Roboto Mono";
+  font-size: 14px;
+  color: var(--gray_text);
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.reason {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black_bg);
+}
+.reason .down_huina {
+  width: 95%;
+  height: 92%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--center_bg);
+  border-radius: 24px;
+}
+.reason .down_huina .cneter {
+  width: 95%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.reason .down_huina .cneter .up {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: var(--center_bg);
+  border-radius: 20px;
+  padding: 3%;
+}
+.reason .down_huina .cneter .up h1 {
+  font-family: "Roboto Flex";
+  font-size: 48px;
+  color: #ffffff;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.reason .down_huina .cneter .down {
+  width: 100%;
+  height: 65%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.reason .down_huina .cneter .down article {
+  width: 23%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--center_bg);
+  border: 1px solid var(--center_bg);
+  border-radius: 15px;
+}
+.reason .down_huina .cneter .down article .center {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.reason .down_huina .cneter .down article .center h3 {
+  font-family: "Roboto Flex";
+  font-size: 20px;
+  color: #ffffff;
+  text-align: left;
+  height: 25%;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.reason .down_huina .cneter .down article .center p {
+  font-family: "Roboto Mono";
+  font-size: 14px;
+  color: var(--gray_text);
+  text-align: left;
+  height: 60%;
+}
+.reason .down_huina .cneter .down article .center div {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.reason .down_huina .cneter .down article .center div button {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s all ease;
+}
+.reason .down_huina .cneter .down article .center div button img {
+  width: 42px;
+  height: 42px;
+}
+.reason .down_huina .cneter .down article .center div button p {
+  font-family: "Roboto Mono";
+  font-size: 14px;
+  color: #ffffff;
+  text-align: left;
+}
+.reason .down_huina .cneter .down article .center div button:hover {
+  transform: scale(1.05);
+}
+
+.ourservice {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black_bg);
+}
+.ourservice .govno_govna {
+  width: 95%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--center_bg);
+  border-radius: 24px;
+}
+.ourservice .govno_govna .center {
+  width: 95%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.ourservice .govno_govna .center .up {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: var(--center_bg);
+  border-radius: 20px;
+  padding: 3%;
+}
+.ourservice .govno_govna .center .up h1 {
+  font-family: "Roboto Flex";
+  font-size: 36px;
+  color: var(--white-orange);
+  text-align: left;
+  text-transform: uppercase;
+}
+.ourservice .govno_govna .center .down {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2%;
+}
+.ourservice .govno_govna .center .down article {
+  width: 48%;
+  height: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--center_bg);
+  border: 1px solid var(--center_bg);
+  border-radius: 15px;
+}
+.ourservice .govno_govna .center .down article .center {
+  width: 80%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.ourservice .govno_govna .center .down article .center .verh {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.ourservice .govno_govna .center .down article .center .verh .left {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+}
+.ourservice .govno_govna .center .down article .center .verh .left img {
+  width: 55px;
+  height: 55px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.ourservice .govno_govna .center .down article .center .verh .left h6 {
+  font-family: "Roboto Flex";
+  font-size: 30px;
+  color: var(--white-orange);
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+.ourservice .govno_govna .center .down article .center .verh .right {
+  width: 40%;
+  height: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s all ease;
+}
+.ourservice .govno_govna .center .down article .center .verh .right img {
+  width: 42px;
+  height: 42px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.ourservice .govno_govna .center .down article .center .verh .right p {
+  font-family: "Roboto Mono";
+  font-size: 20px;
+  color: var(--gray_text);
+  text-align: left;
+  text-transform: uppercase;
+}
+.ourservice .govno_govna .center .down article .center .verh .right:hover {
+  transform: scale(1.05);
+}
+.ourservice .govno_govna .center .down article .center .niz {
+  width: 100%;
+  height: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.ourservice .govno_govna .center .down article .center .niz p {
+  font-family: "Roboto Mono";
+  font-size: 14px;
+  color: var(--gray_text);
+  text-align: left;
+  height: 50%;
+}
+.ourservice .govno_govna .center .down article .center .niz .stage_for {
+  width: 100%;
+  height: 45%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.ourservice .govno_govna .center .down article .center .niz .stage_for .empty_div {
+  width: 50%;
+  height: 100%;
+}
+.ourservice .govno_govna .center .down article .center .niz .stage_for h3 {
+  font-family: "Roboto Flex";
+  font-size: 30px;
+  color: var(--white-orange);
+  text-align: right;
+  text-transform: uppercase;
+  font-weight: 500;
+  width: 50%;
+}
+
+.outworks {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black_bg);
+}
+.outworks .cneter {
+  width: 95%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.outworks .cneter .up {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.outworks .cneter .up .center {
+  width: 100%;
+  height: 12%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--center_bg);
+  border-radius: 20px;
+  padding: 3%;
+}
+.outworks .cneter .up .center h1 {
+  font-family: "Roboto Flex";
+  font-size: 36px;
+  color: var(--white-orange);
+  text-align: left;
+  text-transform: uppercase;
+}
+.outworks .cneter .up .center button {
+  width: 15%;
+  height: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: transparent;
+  border: 1px solid var(--center_bg);
+  border-radius: 100px;
+  cursor: pointer;
+  transition: 0.5s all ease;
+}
+.outworks .cneter .up .center button img {
+  width: 42px;
+  height: 42px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.outworks .cneter .up .center button p {
+  font-family: "Roboto Mono";
+  font-size: 14px;
+  color: var(--gray_text);
+  text-transform: uppercase;
+  text-align: left;
+}
+.outworks .cneter .up .center button:hover {
+  transform: scale(1.05);
+}
+.outworks .cneter .up .down {
+  width: 100%;
+  height: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 24px;
+}
+.outworks .cneter .up .down .center2 {
+  width: 97%;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2%;
+}
+.outworks .cneter .up .down .center2 article {
+  width: 100%;
+  height: 48%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--center_bg);
+  border-radius: 15px;
+}
+.outworks .cneter .up .down .center2 article .huina {
+  width: 95%;
+  height: 85%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.outworks .cneter .up .down .center2 article .huina .left_part {
+  width: 28%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--center_bg);
+  border-radius: 14px;
+}
+.outworks .cneter .up .down .center2 article .huina .left_part .center_parta {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.outworks .cneter .up .down .center2 article .huina .left_part .center_parta .verh {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.outworks .cneter .up .down .center2 article .huina .left_part .center_parta .verh img {
+  width: 45px;
+  height: 45px;
+}
+.outworks .cneter .up .down .center2 article .huina .left_part .center_parta .verh h3 {
+  font-family: "Roboto Flex";
+  font-size: 22px;
+  color: var(--white-orange);
+  text-align: left;
+  text-transform: uppercase;
+  width: 45%;
+}
+.outworks .cneter .up .down .center2 article .huina .left_part .center_parta .verh button {
+  width: 35%;
+  height: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  background-color: transparent;
+  border: 1px solid var(--center_bg);
+  border-radius: 100px;
+  cursor: pointer;
+  transition: 0.5s all ease;
+}
+.outworks .cneter .up .down .center2 article .huina .left_part .center_parta .verh button img {
+  width: 42px;
+  height: 42px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.outworks .cneter .up .down .center2 article .huina .left_part .center_parta .verh button p {
+  font-family: "Roboto Mono";
+  font-size: 12px;
+  color: var(--gray_text);
+  text-transform: uppercase;
+  text-align: left;
+}
+.outworks .cneter .up .down .center2 article .huina .left_part .center_parta .verh button:hover {
+  transform: scale(1.05);
+}
+.outworks .cneter .up .down .center2 article .huina .left_part .center_parta .category {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.outworks .cneter .up .down .center2 article .huina .left_part .center_parta .category div {
+  width: -moz-max-content;
+  width: max-content;
+  height: 45%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  background: var(--black_bg);
+  border-radius: 100px;
+  padding: 0 15px;
+}
+.outworks .cneter .up .down .center2 article .huina .left_part .center_parta .category div span {
+  font-family: "Roboto Mono";
+  font-size: 12px;
+  color: var(--gray_text);
+  text-transform: uppercase;
+}
+.outworks .cneter .up .down .center2 article .huina .left_part .center_parta .category div li {
+  font-family: "Roboto Mono";
+  font-size: 12px;
+  color: var(--white-orange);
+  list-style: none;
+  text-transform: uppercase;
+}
+.outworks .cneter .up .down .center2 article .huina .left_part .center_parta > p {
+  width: 100%;
+  height: 40%;
+  font-family: "Roboto Mono";
+  font-size: 14px;
+  color: var(--gray_text);
+  text-align: left;
+}
+.outworks .cneter .up .down .center2 article .huina .center_part {
+  width: 35%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px;
+}
+.outworks .cneter .up .down .center2 article .huina .right_part {
+  width: 28%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.outworks .cneter .up .down .center2 article .huina .right_part .verh {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--center_bg);
+  border-radius: 15px;
+}
+.outworks .cneter .up .down .center2 article .huina .right_part .verh .center_parta {
+  width: 80%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.outworks .cneter .up .down .center2 article .huina .right_part .verh .center_parta h6 {
+  font-family: "Roboto Mono";
+  font-size: 14px;
+  color: var(--white-orange);
+  text-align: left;
+  text-transform: uppercase;
+}
+.outworks .cneter .up .down .center2 article .huina .right_part .verh .center_parta .stack {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+}
+.outworks .cneter .up .down .center2 article .huina .right_part .verh .center_parta .stack div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--black_bg);
+  border-radius: 100px;
+  padding: 8px 15px;
+}
+.outworks .cneter .up .down .center2 article .huina .right_part .verh .center_parta .stack div p {
+  font-family: "Roboto Mono";
+  font-size: 12px;
+  color: var(--gray_text);
+  text-align: center;
+}
+.outworks .cneter .up .down .center2 article .huina .right_part .team_members {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--center_bg);
+  border-radius: 15px;
+}
+.outworks .cneter .up .down .center2 article .huina .right_part .team_members .center_parta {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.outworks .cneter .up .down .center2 article .huina .right_part .team_members .center_parta h6 {
+  width: -moz-max-content;
+  width: max-content;
+  font-family: "Roboto Mono";
+  font-size: 14px;
+  color: var(--white-orange);
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.outworks .cneter .up .down .center2 article .huina .right_part .team_members .center_parta div {
+  width: 60%;
+  height: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.outworks .cneter .up .down .center2 article .huina .right_part .team_members .center_parta div img {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 2px solid var(--center_bg);
+}
+.outworks .cneter .up .down .center2 article .huina .right_part button {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-family: "Roboto Mono";
+  font-size: 14px;
+  color: var(--black_bg);
+  background-color: var(--orange);
+  text-transform: uppercase;
+  transition: 0.5s all ease;
+}
+.outworks .cneter .up .down .center2 article .huina .right_part button:hover {
+  background: #ad5135;
+}
+
+.testimonials {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black_bg);
+}
+.testimonials .huhuhu {
+  width: 95%;
+  height: 92%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--center_bg);
+  border-radius: 24px;
+}
+.testimonials .huhuhu .cneter {
+  width: 95%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.testimonials .huhuhu .cneter .up {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.testimonials .huhuhu .cneter .up .center {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--center_bg);
+  border-radius: 20px;
+  padding: 3%;
+}
+.testimonials .huhuhu .cneter .up .center h1 {
+  font-family: "Roboto Flex";
+  font-size: 36px;
+  color: var(--white-orange);
+  text-align: left;
+  text-transform: uppercase;
+}
+.testimonials .huhuhu .cneter .up .center button {
+  width: 18%;
+  height: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: transparent;
+  border: 1px solid var(--center_bg);
+  border-radius: 100px;
+  cursor: pointer;
+  transition: 0.5s all ease;
+}
+.testimonials .huhuhu .cneter .up .center button img {
+  width: 42px;
+  height: 42px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.testimonials .huhuhu .cneter .up .center button p {
+  font-family: "Roboto Mono";
+  font-size: 14px;
+  color: var(--gray_text);
+  text-transform: uppercase;
+  text-align: left;
+}
+.testimonials .huhuhu .cneter .up .center button:hover {
+  transform: scale(1.05);
+}
+.testimonials .huhuhu .cneter .down {
+  width: 100%;
+  height: 75%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2%;
+}
+.testimonials .huhuhu .cneter .down article {
+  width: 23%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--center_bg);
+  border: 1px solid var(--center_bg);
+  border-radius: 15px;
+  overflow: hidden;
+}
+.testimonials .huhuhu .cneter .down article .verh {
+  width: 100%;
+  height: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.testimonials .huhuhu .cneter .down article .verh .center {
+  width: 80%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.testimonials .huhuhu .cneter .down article .verh .center h6 {
+  font-family: "Roboto Flex";
+  font-size: 18px;
+  color: var(--white-orange);
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.testimonials .huhuhu .cneter .down article .verh .center p {
+  font-family: "Roboto Mono";
+  font-size: 13px;
+  color: var(--gray_text);
+  text-align: left;
+}
+.testimonials .huhuhu .cneter .down article .niz {
+  width: 100%;
+  height: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1F1F1F;
+}
+.testimonials .huhuhu .cneter .down article .niz .center {
+  width: 80%;
+  height: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.testimonials .huhuhu .cneter .down article .niz .center img {
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.testimonials .huhuhu .cneter .down article .niz .center div {
+  width: 45%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.testimonials .huhuhu .cneter .down article .niz .center div h6 {
+  font-family: "Roboto Flex";
+  font-size: 14px;
+  color: var(--white-orange);
+  text-align: left;
+}
+.testimonials .huhuhu .cneter .down article .niz .center div p {
+  font-family: "Roboto Mono";
+  font-size: 11px;
+  color: var(--gray_text);
+  text-align: left;
+}
+.testimonials .huhuhu .cneter .down article .niz .center button {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid var(--center_bg);
+  border-radius: 100%;
+  cursor: pointer;
+}
+.testimonials .huhuhu .cneter .down article .niz .center button img {
+  width: 18px;
+  height: 18px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.qAa {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black_bg);
+}
+.qAa .cneter {
+  width: 95%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.qAa .cneter .up {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.qAa .cneter .up .center {
+  width: 100%;
+  height: 12%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--center_bg);
+  border-radius: 20px;
+  padding: 3%;
+}
+.qAa .cneter .up .center h1 {
+  font-family: "Roboto Flex";
+  font-size: 36px;
+  color: var(--white-orange);
+  text-align: left;
+  text-transform: uppercase;
+}
+.qAa .cneter .up .center button {
+  width: 15%;
+  height: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: transparent;
+  border: 1px solid var(--center_bg);
+  border-radius: 100px;
+  cursor: pointer;
+}
+.qAa .cneter .up .center button img {
+  width: 24px;
+  height: 24px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.qAa .cneter .up .center button p {
+  font-family: "Roboto Mono";
+  font-size: 14px;
+  color: var(--gray_text);
+  text-transform: uppercase;
+  text-align: left;
+}
+.qAa .cneter .up .down {
+  width: 100%;
+  height: 85%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2%;
+}
+.qAa .cneter .up .down .left {
+  width: 62%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2%;
+}
+.qAa .cneter .up .down .left article {
+  width: 100%;
+  height: 18%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--center_bg);
+  border: 1px solid var(--center_bg);
+  border-radius: 15px;
+}
+.qAa .cneter .up .down .left article .center_art {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.qAa .cneter .up .down .left article .center_art span {
+  font-family: "Roboto Flex";
+  font-size: 16px;
+  color: var(--white-orange);
+  text-align: left;
+  width: 85%;
+}
+.qAa .cneter .up .down .left article .center_art img {
+  width: 40px;
+  height: 40px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.qAa .cneter .up .down .left article.active {
+  height: 28%;
+}
+.qAa .cneter .up .down .left article.active .center_art .txt_content {
+  width: 85%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.qAa .cneter .up .down .left article.active .center_art .txt_content span {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #262626;
+}
+.qAa .cneter .up .down .left article.active .center_art .txt_content p {
+  width: 100%;
+  height: 50%;
+  font-family: "Roboto Mono";
+  font-size: 13px;
+  color: var(--gray_text);
+  text-align: left;
+}
+.qAa .cneter .up .down .left article.active .center_art button {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid var(--orange);
+  border-radius: 100%;
+  cursor: pointer;
+}
+.qAa .cneter .up .down .left article.active .center_art button img {
+  width: 18px;
+  height: 18px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.qAa .cneter .up .down .right {
+  width: 36%;
+  height: 94%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.qAa .cneter .up .down .right .center_w {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--center_bg);
+  border-radius: 15px;
+  padding: 5%;
+}
+.qAa .cneter .up .down .right .center_w .verh {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid #262626;
+}
+.qAa .cneter .up .down .right .center_w .verh h4 {
+  font-family: "Roboto Flex";
+  font-size: 22px;
+  color: var(--white-orange);
+  text-align: left;
+  text-transform: uppercase;
+}
+.qAa .cneter .up .down .right .center_w .down {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.qAa .cneter .up .down .right .center_w .down div {
+  width: 100%;
+  height: 22%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.qAa .cneter .up .down .right .center_w .down div p {
+  font-family: "Roboto Mono";
+  font-size: 18px;
+  color: var(--white-orange);
+  text-align: left;
+  text-transform: uppercase;
+}
+.qAa .cneter .up .down .right .center_w .down div input {
+  width: 100%;
+  height: 60%;
+  background: var(--black_bg);
+  border: none;
+  border-radius: 10px;
+  padding: 0 15px;
+  font-family: "Roboto Mono";
+  font-size: 13px;
+  color: var(--gray_text);
+  outline: none;
+  text-transform: uppercase;
+}
+.qAa .cneter .up .down .right .center_w .down div input::-moz-placeholder {
+  color: var(--gray_text);
+}
+.qAa .cneter .up .down .right .center_w .down div input::placeholder {
+  color: var(--gray_text);
+}
+.qAa .cneter .up .down .right .center_w .down div:last-of-type {
+  height: 25%;
+}
+.qAa .cneter .up .down .right .center_w .down div:last-of-type input {
+  height: 80%;
+  padding: 15px;
+  resize: none;
+  display: flex;
+  justify-content: flex-start;
+}
+.qAa .cneter .up .down .right .center_w .down button {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--orange_text);
+  border-style: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-family: "Roboto Mono";
+  font-size: 14px;
+  color: var(--black_bg);
+  text-transform: uppercase;
+  transition: 0.5s all ease;
+  background-color: var(--orange);
+}
+.qAa .cneter .up .down .right .center_w .down button:hover {
+  background-color: #ad5135;
+}
+
+footer {
+  width: 100%;
+  height: 130vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black_bg);
+}
+footer .main_center {
+  width: 95%;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3%;
+}
+footer .main_center .digital {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--orange);
+  border-radius: 15px;
+  padding: 4% 5%;
+}
+footer .main_center .digital .cneter {
+  width: 95%;
+  height: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .main_center .digital .cneter .puding {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+footer .main_center .digital .cneter .puding h1 {
+  font-family: "Roboto Flex";
+  font-size: 48px;
+  color: var(--black_bg);
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+footer .main_center .digital .cneter .puding p {
+  font-family: "Roboto Mono";
+  font-size: 14px;
+  color: var(--black_bg);
+  text-align: left;
+}
+footer .main_center .digital .cneter .duding {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+footer .main_center .digital .cneter .duding button {
+  width: 80%;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: var(--black_bg);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.5s all ease;
+}
+footer .main_center .digital .cneter .duding button p {
+  font-family: "Roboto Mono";
+  font-size: 14px;
+  color: var(--white-orange);
+  text-transform: uppercase;
+}
+footer .main_center .digital .cneter .duding button img {
+  width: 20px;
+  height: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+footer .main_center .digital .cneter .duding button:hover {
+  background: var();
+}
+footer .main_center .lenta {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  background: var(--center_bg);
+  border-radius: 12px;
+  padding: 2%;
+}
+footer .main_center .lenta li {
+  font-family: "Roboto Mono";
+  font-size: 14px;
+  color: var(--gray_text);
+  text-transform: uppercase;
+  list-style: none;
+  white-space: nowrap;
+  padding: 0 20px;
+  position: relative;
+}
+footer .main_center .lenta li::after {
+  content: "•";
+  color: var(--orange);
+  position: absolute;
+  right: 0;
+}
+footer .main_center .lenta li:last-child::after {
+  content: "";
+}
+footer .main_center .sam_footer {
+  width: 100%;
+  height: 65%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2%;
+}
+footer .main_center .sam_footer .left {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2%;
+}
+footer .main_center .sam_footer .left article {
+  width: 48%;
+  height: 48%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--center_bg);
+  border: 1px solid var(--center_bg);
+  border-radius: 15px;
+}
+footer .main_center .sam_footer .left article .center_art {
+  width: 80%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+footer .main_center .sam_footer .left article .center_art .verh {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .main_center .sam_footer .left article .center_art .verh img {
+  width: 4vw;
+  height: 4vw;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+footer .main_center .sam_footer .left article .center_art .verh button {
+  width: 2.5vw;
+  height: 2.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid var(--gray_text);
+  border-radius: 100%;
+  cursor: pointer;
+}
+footer .main_center .sam_footer .left article .center_art .verh button img {
+  width: 50%;
+  height: auto;
+}
+footer .main_center .sam_footer .left article .center_art .niz {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+footer .main_center .sam_footer .left article .center_art .niz h6 {
+  font-family: "Roboto Flex";
+  font-size: 30px;
+  color: var(--white-orange);
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+footer .main_center .sam_footer .left article .center_art .niz p {
+  font-family: "Roboto Mono";
+  font-size: 13px;
+  color: var(--gray_text);
+  text-align: left;
+}
+footer .main_center .sam_footer .right {
+  width: 58%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2%;
+}
+footer .main_center .sam_footer .right .verh {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--center_bg);
+  border-radius: 15px;
+}
+footer .main_center .sam_footer .right .verh .center_vse {
+  width: 80%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+footer .main_center .sam_footer .right .verh .center_vse ul {
+  width: 23%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+footer .main_center .sam_footer .right .verh .center_vse ul h3 {
+  font-family: "Roboto Mono";
+  font-size: 16px;
+  color: var(--white-orange);
+  text-align: left;
+  margin-bottom: 20px;
+}
+footer .main_center .sam_footer .right .verh .center_vse ul a {
+  font-family: "Roboto Mono";
+  font-size: 13px;
+  color: var(--gray_text);
+  text-decoration: none;
+  margin-bottom: 12px;
+  transition: 0.3s all ease;
+}
+footer .main_center .sam_footer .right .verh .center_vse ul a:hover {
+  color: var(--orange_text);
+}
+footer .main_center .sam_footer .right .verh .center_vse ul div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+footer .main_center .sam_footer .right .verh .center_vse ul div a {
+  margin-bottom: 0;
+}
+footer .main_center .sam_footer .right .verh .center_vse ul div p {
+  font-family: "Roboto Mono";
+  font-size: 11px;
+  color: var(--gray_text);
+  background: var(--black_bg);
+  padding: 3px 8px;
+  border-radius: 5px;
+}
+footer .main_center .sam_footer .right .sered {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--center_bg);
+  border-radius: 15px;
+}
+footer .main_center .sam_footer .right .sered .center_sered {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .main_center .sam_footer .right .sered .center_sered .pravo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+footer .main_center .sam_footer .right .sered .center_sered .pravo h6 {
+  font-family: "Roboto Mono";
+  font-size: 12px;
+  color: var(--gray_text);
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+footer .main_center .sam_footer .right .sered .center_sered .pravo h3 {
+  font-family: "Roboto Flex";
+  font-size: 24px;
+  color: var(--white-orange);
+  text-align: left;
+  text-transform: uppercase;
+}
+footer .main_center .sam_footer .right .sered .center_sered .levo {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px;
+}
+footer .main_center .sam_footer .right .sered .center_sered .levo input {
+  width: 70%;
+  height: 50px;
+  background: var(--center_bg);
+  border: none;
+  padding: 0 20px;
+  font-family: "Roboto Mono";
+  font-size: 13px;
+  color: var(--gray_text);
+  outline: none;
+  border-bottom: 1px solid var(--gray_text);
+}
+footer .main_center .sam_footer .right .sered .center_sered .levo input::-moz-placeholder {
+  color: var(--gray_text);
+}
+footer .main_center .sam_footer .right .sered .center_sered .levo input::placeholder {
+  color: var(--gray_text);
+}
+footer .main_center .sam_footer .right .sered .center_sered .levo button {
+  width: 2.5vw;
+  height: 2.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid var(--gray_text);
+  border-radius: 100%;
+  cursor: pointer;
+}
+footer .main_center .sam_footer .right .sered .center_sered .levo button img {
+  width: 50%;
+  height: auto;
+}
+footer .main_center .sam_footer .right .niz {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--center_bg);
+  border-radius: 15px;
+}
+footer .main_center .sam_footer .right .niz .center_n {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .main_center .sam_footer .right .niz .center_n p {
+  font-family: "Roboto Mono";
+  font-size: 13px;
+  color: var(--gray_text);
+  text-align: left;
+}
+footer .main_center .sam_footer .right .niz .center_n div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+}
+footer .main_center .sam_footer .right .niz .center_n div p {
+  font-family: "Roboto Mono";
+  font-size: 13px;
+  color: var(--gray_text);
+  cursor: pointer;
+}
+footer .main_center .sam_footer .right .niz .center_n div a {
+  font-family: "Roboto Mono";
+  font-size: 13px;
+  color: var(--gray_text);
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,1526 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --black_bg: #0F0F0F;
+  --center_bg: #1A1A1A;
+  --gray_text: #81807E;
+  --orange_text: #E7BEB1;
+  --orange: #CE7D63;
+  --white-orange: #F9EFEC;
+}
+
+.roboto-mono {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.roboto-flex {
+  font-family: "Roboto Flex", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "slnt" 0, "wdth" 100, "GRAD" 0, "XOPQ" 96, "XTRA" 468, "YOPQ" 79, "YTAS" 750, "YTDE" -203, "YTFI" 738, "YTLC" 514, "YTUC" 712;
+}
+
+body {
+  background: var(--black_bg);
+}
+
+header {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .center_smenter {
+  width: 95%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  background: var(--center_bg);
+}
+header .center_smenter .center {
+  width: 90%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header .center_smenter .center nav {
+  width: 70%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header .center_smenter .center nav ul {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header .center_smenter .center nav ul a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: -moz-min-content;
+  width: min-content;
+  padding: 2.5%;
+  font-family: "Roboto Mono";
+  font-size: 18px;
+  color: var(--gray_text);
+  background: var(--black_bg);
+  border-radius: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s all ease;
+}
+header .center_smenter .center nav ul a:hover {
+  color: var(--orange_text);
+}
+header .center_smenter .center nav button {
+  border-style: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 18%;
+  padding: 2.5%;
+  font-family: "Roboto Mono";
+  font-size: 16px;
+  color: var(--black_bg);
+  background: var(--orange);
+  border-radius: 12px;
+  transition: 0.5s all ease;
+  text-transform: uppercase;
+}
+header .center_smenter .center nav button:hover {
+  background-color: #E7BEB1;
+}
+
+.main {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black_bg);
+}
+.main .cneter {
+  width: 95%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .cneter .up {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 2%;
+}
+.main .cneter .up .left {
+  width: 65%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--center_bg);
+  border-radius: 20px;
+}
+.main .cneter .up .left .center {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.main .cneter .up .left .center .verh {
+  width: 100%;
+  height: 35%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+.main .cneter .up .left .center .verh h1 {
+  width: 60%;
+  font-family: "Roboto Flex";
+  font-size: 64px;
+  color: var(--white-orange);
+  text-align: left;
+  text-transform: uppercase;
+  line-height: 1.1;
+}
+.main .cneter .up .left .center .verh button {
+  width: 40%;
+  height: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: transparent;
+  border-style: none;
+  cursor: pointer;
+}
+.main .cneter .up .left .center .verh button img {
+  width: 50px;
+  height: 50px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.main .cneter .up .left .center .verh button p {
+  font-family: "Roboto Mono";
+  font-size: 16px;
+  color: var(--orange);
+  text-transform: uppercase;
+  text-align: left;
+}
+.main .cneter .up .left .center > p {
+  width: 90%;
+  height: 20%;
+  font-family: "Roboto Mono";
+  text-align: left;
+  font-size: 14px;
+  color: var(--gray_text);
+  line-height: 1.6;
+}
+.main .cneter .up .left .center .hiz {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: var(--black_bg);
+  border-radius: 15px;
+}
+.main .cneter .up .left .center .hiz ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5%;
+  list-style: none;
+}
+.main .cneter .up .left .center .hiz ul li {
+  font-family: "Roboto Mono";
+  font-size: 14px;
+  color: var(--gray_text);
+  text-align: left;
+  text-transform: uppercase;
+  position: relative;
+  white-space: nowrap;
+}
+.main .cneter .up .left .center .hiz ul li::after {
+  content: "•";
+  color: var(--orange);
+  position: absolute;
+  right: -15px;
+}
+.main .cneter .up .left .center .hiz ul li:last-child::after {
+  content: "";
+}
+.main .cneter .up .right {
+  width: 33%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .cneter .up .right .center {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2%;
+}
+.main .cneter .up .right .center div {
+  width: 48%;
+  height: 31%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #1F1F1F;
+  border-radius: 15px;
+  gap: 10px;
+}
+.main .cneter .up .right .center div p {
+  font-family: "Roboto Mono";
+  font-size: 12px;
+  color: var(--gray_text);
+  text-align: center;
+  text-transform: uppercase;
+}
+.main .cneter .up .right .center div h6 {
+  font-family: "Roboto Flex";
+  font-size: 42px;
+  color: var(--orange);
+  text-align: center;
+}
+.main .cneter .up .right .center div:last-child {
+  width: 48%;
+  height: 31%;
+  background: #1F1F1F;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .cneter .up .right .center div:last-child button {
+  width: 80%;
+  height: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.main .cneter .up .right .center div:last-child button img {
+  width: 24px;
+  height: 24px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.main .cneter .up .right .center div:last-child button p {
+  font-family: "Roboto Mono";
+  font-size: 14px;
+  color: var(--gray_text);
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.contacts {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black_bg);
+}
+.contacts .cneter {
+  width: 95%;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 2%;
+}
+.contacts .cneter .left {
+  width: 38%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--center_bg);
+  border-radius: 20px;
+}
+.contacts .cneter .left .center {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.contacts .cneter .left .center .verh {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.contacts .cneter .left .center .verh button {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1F1F1F;
+  border: 1px solid #262626;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-family: "Roboto Mono";
+  font-size: 13px;
+  color: var(--gray_text);
+  text-transform: uppercase;
+  transition: 0.5s all ease;
+}
+.contacts .cneter .left .center .verh button:nth-child(2) {
+  background: var(--orange);
+  color: var(--black_bg);
+}
+.contacts .cneter .left .center .verh button:hover {
+  background: var(--orange);
+  color: var(--black_bg);
+}
+.contacts .cneter .left .center .niz {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.contacts .cneter .left .center .niz .general {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.contacts .cneter .left .center .niz .general p {
+  font-family: "Roboto Mono";
+  font-size: 13px;
+  color: var(--gray_text);
+  text-align: left;
+  margin-bottom: 10px;
+}
+.contacts .cneter .left .center .niz .general .input_button {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #1F1F1F;
+  border: 1px solid #262626;
+  border-radius: 12px;
+  padding: 0 20px;
+}
+.contacts .cneter .left .center .niz .general .input_button input {
+  width: 80%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  font-family: "Roboto Mono";
+  font-size: 14px;
+  color: var(--white-orange);
+  text-transform: uppercase;
+  outline: none;
+}
+.contacts .cneter .left .center .niz .general .input_button input::-moz-placeholder {
+  color: var(--gray_text);
+}
+.contacts .cneter .left .center .niz .general .input_button input::placeholder {
+  color: var(--gray_text);
+}
+.contacts .cneter .left .center .niz .general .input_button div {
+  width: 15%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contacts .cneter .left .center .niz .general .input_button div button {
+  width: 58px;
+  height: 58px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border-style: none;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.contacts .cneter .left .center .niz .general .input_button div button img {
+  width: 100%;
+  height: 100%;
+}
+.contacts .cneter .vsykoe {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--center_bg);
+  border-radius: 20px;
+}
+.contacts .cneter .vsykoe .center {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.contacts .cneter .vsykoe .center .verh {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2%;
+}
+.contacts .cneter .vsykoe .center .verh .input_name {
+  width: 48%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.contacts .cneter .vsykoe .center .verh .input_name p {
+  font-family: "Roboto Mono";
+  font-size: 14px;
+  color: var(--white-orange);
+  text-align: left;
+  text-transform: uppercase;
+}
+.contacts .cneter .vsykoe .center .verh .input_name input {
+  width: 100%;
+  height: 60%;
+  background: #1F1F1F;
+  border: 1px solid #262626;
+  border-radius: 12px;
+  padding: 0 20px;
+  font-family: "Roboto Mono";
+  font-size: 14px;
+  color: var(--gray_text);
+  outline: none;
+}
+.contacts .cneter .vsykoe .center .verh .input_name input::-moz-placeholder {
+  color: var(--gray_text);
+}
+.contacts .cneter .vsykoe .center .verh .input_name input::placeholder {
+  color: var(--gray_text);
+}
+.contacts .cneter .vsykoe .center .lilpump {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+.contacts .cneter .vsykoe .center .lilpump div {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.contacts .cneter .vsykoe .center .lilpump div img:first-child {
+  width: 30px;
+  height: 30px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 5px;
+}
+.contacts .cneter .vsykoe .center .lilpump div img:last-child {
+  width: 15px;
+  height: 15px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.contacts .cneter .vsykoe .center .lilpump input {
+  width: 75%;
+  height: 100%;
+  background: #1F1F1F;
+  border: 1px solid #262626;
+  border: none;
+  font-family: "Roboto Mono";
+  font-size: 14px;
+  color: var(--gray_text);
+  outline: none;
+}
+.contacts .cneter .vsykoe .center .lilpump input::-moz-placeholder {
+  color: var(--gray_text);
+}
+.contacts .cneter .vsykoe .center .lilpump input::placeholder {
+  color: var(--gray_text);
+}
+.contacts .cneter .vsykoe .center .big_papa {
+  width: 100%;
+  height: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.contacts .cneter .vsykoe .center .big_papa p {
+  font-family: "Roboto Mono";
+  font-size: 14px;
+  color: var(--white-orange);
+  text-align: left;
+  text-transform: uppercase;
+}
+.contacts .cneter .vsykoe .center .big_papa textarea {
+  width: 100%;
+  height: 80%;
+  background: #1F1F1F;
+  border: 1px solid #262626;
+  border: none;
+  border-radius: 12px;
+  padding: 20px;
+  font-family: "Roboto Mono";
+  font-size: 14px;
+  color: var(--gray_text);
+  outline: none;
+  resize: none;
+}
+.contacts .cneter .vsykoe .center .big_papa textarea::-moz-placeholder {
+  color: var(--gray_text);
+}
+.contacts .cneter .vsykoe .center .big_papa textarea::placeholder {
+  color: var(--gray_text);
+}
+.contacts .cneter .vsykoe .center .send_ {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.contacts .cneter .vsykoe .center .send_ div {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.contacts .cneter .vsykoe .center .send_ div input[type=checkbox] {
+  width: 20px;
+  height: 20px;
+  accent-color: var(--orange);
+}
+.contacts .cneter .vsykoe .center .send_ div a {
+  font-family: "Roboto Mono";
+  font-size: 12px;
+  color: var(--gray_text);
+  text-decoration: none;
+}
+.contacts .cneter .vsykoe .center .send_ button {
+  width: 40%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  background: var(--orange);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.5s all ease;
+}
+.contacts .cneter .vsykoe .center .send_ button p {
+  font-family: "Roboto Mono";
+  font-size: 14px;
+  color: var(--black_bg);
+  text-transform: uppercase;
+}
+.contacts .cneter .vsykoe .center .send_ button img {
+  width: 20px;
+  height: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.contacts .cneter .vsykoe .center .send_ button:hover {
+  background: var(--orange_text);
+}
+
+.testimonials {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black_bg);
+}
+.testimonials .huhuhu {
+  width: 95%;
+  height: 92%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--center_bg);
+  border-radius: 24px;
+}
+.testimonials .huhuhu .cneter {
+  width: 95%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.testimonials .huhuhu .cneter .up {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.testimonials .huhuhu .cneter .up .center {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--center_bg);
+  border-radius: 20px;
+  padding: 3%;
+}
+.testimonials .huhuhu .cneter .up .center h1 {
+  font-family: "Roboto Flex";
+  font-size: 36px;
+  color: var(--white-orange);
+  text-align: left;
+  text-transform: uppercase;
+}
+.testimonials .huhuhu .cneter .up .center button {
+  width: 18%;
+  height: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: transparent;
+  border: 1px solid var(--center_bg);
+  border-radius: 100px;
+  cursor: pointer;
+  transition: 0.5s all ease;
+}
+.testimonials .huhuhu .cneter .up .center button img {
+  width: 42px;
+  height: 42px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.testimonials .huhuhu .cneter .up .center button p {
+  font-family: "Roboto Mono";
+  font-size: 14px;
+  color: var(--gray_text);
+  text-transform: uppercase;
+  text-align: left;
+}
+.testimonials .huhuhu .cneter .up .center button:hover {
+  transform: scale(1.05);
+}
+.testimonials .huhuhu .cneter .down {
+  width: 100%;
+  height: 75%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2%;
+}
+.testimonials .huhuhu .cneter .down article {
+  width: 23%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--center_bg);
+  border: 1px solid var(--center_bg);
+  border-radius: 15px;
+  overflow: hidden;
+}
+.testimonials .huhuhu .cneter .down article .verh {
+  width: 100%;
+  height: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.testimonials .huhuhu .cneter .down article .verh .center {
+  width: 80%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.testimonials .huhuhu .cneter .down article .verh .center h6 {
+  font-family: "Roboto Flex";
+  font-size: 18px;
+  color: var(--white-orange);
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.testimonials .huhuhu .cneter .down article .verh .center p {
+  font-family: "Roboto Mono";
+  font-size: 13px;
+  color: var(--gray_text);
+  text-align: left;
+}
+.testimonials .huhuhu .cneter .down article .niz {
+  width: 100%;
+  height: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1F1F1F;
+}
+.testimonials .huhuhu .cneter .down article .niz .center {
+  width: 80%;
+  height: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.testimonials .huhuhu .cneter .down article .niz .center img {
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.testimonials .huhuhu .cneter .down article .niz .center div {
+  width: 45%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.testimonials .huhuhu .cneter .down article .niz .center div h6 {
+  font-family: "Roboto Flex";
+  font-size: 14px;
+  color: var(--white-orange);
+  text-align: left;
+}
+.testimonials .huhuhu .cneter .down article .niz .center div p {
+  font-family: "Roboto Mono";
+  font-size: 11px;
+  color: var(--gray_text);
+  text-align: left;
+}
+.testimonials .huhuhu .cneter .down article .niz .center button {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid var(--center_bg);
+  border-radius: 100%;
+  cursor: pointer;
+}
+.testimonials .huhuhu .cneter .down article .niz .center button img {
+  width: 18px;
+  height: 18px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.qAa {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black_bg);
+}
+.qAa .cneter {
+  width: 95%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.qAa .cneter .up {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.qAa .cneter .up .center {
+  width: 100%;
+  height: 12%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--center_bg);
+  border-radius: 20px;
+  padding: 3%;
+}
+.qAa .cneter .up .center h1 {
+  font-family: "Roboto Flex";
+  font-size: 36px;
+  color: var(--white-orange);
+  text-align: left;
+  text-transform: uppercase;
+}
+.qAa .cneter .up .center button {
+  width: 15%;
+  height: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: transparent;
+  border: 1px solid var(--center_bg);
+  border-radius: 100px;
+  cursor: pointer;
+}
+.qAa .cneter .up .center button img {
+  width: 24px;
+  height: 24px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.qAa .cneter .up .center button p {
+  font-family: "Roboto Mono";
+  font-size: 14px;
+  color: var(--gray_text);
+  text-transform: uppercase;
+  text-align: left;
+}
+.qAa .cneter .up .down {
+  width: 100%;
+  height: 85%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2%;
+}
+.qAa .cneter .up .down .left {
+  width: 62%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2%;
+}
+.qAa .cneter .up .down .left article {
+  width: 100%;
+  height: 18%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--center_bg);
+  border: 1px solid var(--center_bg);
+  border-radius: 15px;
+}
+.qAa .cneter .up .down .left article .center_art {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.qAa .cneter .up .down .left article .center_art span {
+  font-family: "Roboto Flex";
+  font-size: 16px;
+  color: var(--white-orange);
+  text-align: left;
+  width: 85%;
+}
+.qAa .cneter .up .down .left article .center_art img {
+  width: 40px;
+  height: 40px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.qAa .cneter .up .down .left article.active {
+  height: 28%;
+}
+.qAa .cneter .up .down .left article.active .center_art .txt_content {
+  width: 85%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.qAa .cneter .up .down .left article.active .center_art .txt_content span {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #262626;
+}
+.qAa .cneter .up .down .left article.active .center_art .txt_content p {
+  width: 100%;
+  height: 50%;
+  font-family: "Roboto Mono";
+  font-size: 13px;
+  color: var(--gray_text);
+  text-align: left;
+}
+.qAa .cneter .up .down .left article.active .center_art button {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid var(--orange);
+  border-radius: 100%;
+  cursor: pointer;
+}
+.qAa .cneter .up .down .left article.active .center_art button img {
+  width: 18px;
+  height: 18px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.qAa .cneter .up .down .right {
+  width: 36%;
+  height: 94%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.qAa .cneter .up .down .right .center_w {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--center_bg);
+  border-radius: 15px;
+  padding: 5%;
+}
+.qAa .cneter .up .down .right .center_w .verh {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid #262626;
+}
+.qAa .cneter .up .down .right .center_w .verh h4 {
+  font-family: "Roboto Flex";
+  font-size: 22px;
+  color: var(--white-orange);
+  text-align: left;
+  text-transform: uppercase;
+}
+.qAa .cneter .up .down .right .center_w .down {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.qAa .cneter .up .down .right .center_w .down div {
+  width: 100%;
+  height: 22%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.qAa .cneter .up .down .right .center_w .down div p {
+  font-family: "Roboto Mono";
+  font-size: 18px;
+  color: var(--white-orange);
+  text-align: left;
+  text-transform: uppercase;
+}
+.qAa .cneter .up .down .right .center_w .down div input {
+  width: 100%;
+  height: 60%;
+  background: var(--black_bg);
+  border: none;
+  border-radius: 10px;
+  padding: 0 15px;
+  font-family: "Roboto Mono";
+  font-size: 13px;
+  color: var(--gray_text);
+  outline: none;
+  text-transform: uppercase;
+}
+.qAa .cneter .up .down .right .center_w .down div input::-moz-placeholder {
+  color: var(--gray_text);
+}
+.qAa .cneter .up .down .right .center_w .down div input::placeholder {
+  color: var(--gray_text);
+}
+.qAa .cneter .up .down .right .center_w .down div:last-of-type {
+  height: 25%;
+}
+.qAa .cneter .up .down .right .center_w .down div:last-of-type input {
+  height: 80%;
+  padding: 15px;
+  resize: none;
+  display: flex;
+  justify-content: flex-start;
+}
+.qAa .cneter .up .down .right .center_w .down button {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--orange);
+  border-style: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-family: "Roboto Mono";
+  font-size: 14px;
+  color: var(--black_bg);
+  text-transform: uppercase;
+  transition: 0.5s all ease;
+}
+.qAa .cneter .up .down .right .center_w .down button:hover {
+  background-color: var(--orange_text);
+}
+
+footer {
+  width: 100%;
+  height: 130vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black_bg);
+}
+footer .main_center {
+  width: 95%;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3%;
+}
+footer .main_center .digital {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--orange);
+  border-radius: 15px;
+  padding: 4% 5%;
+}
+footer .main_center .digital .cneter {
+  width: 95%;
+  height: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .main_center .digital .cneter .puding {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+footer .main_center .digital .cneter .puding h1 {
+  font-family: "Roboto Flex";
+  font-size: 48px;
+  color: var(--black_bg);
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+footer .main_center .digital .cneter .puding p {
+  font-family: "Roboto Mono";
+  font-size: 14px;
+  color: var(--black_bg);
+  text-align: left;
+}
+footer .main_center .digital .cneter .duding {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+footer .main_center .digital .cneter .duding button {
+  width: 80%;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: var(--black_bg);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.5s all ease;
+}
+footer .main_center .digital .cneter .duding button p {
+  font-family: "Roboto Mono";
+  font-size: 14px;
+  color: var(--white-orange);
+  text-transform: uppercase;
+}
+footer .main_center .digital .cneter .duding button img {
+  width: 20px;
+  height: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+footer .main_center .digital .cneter .duding button:hover {
+  background: var();
+}
+footer .main_center .lenta {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  background: var(--center_bg);
+  border-radius: 12px;
+  padding: 2%;
+}
+footer .main_center .lenta li {
+  font-family: "Roboto Mono";
+  font-size: 14px;
+  color: var(--gray_text);
+  text-transform: uppercase;
+  list-style: none;
+  white-space: nowrap;
+  padding: 0 20px;
+  position: relative;
+}
+footer .main_center .lenta li::after {
+  content: "•";
+  color: var(--orange);
+  position: absolute;
+  right: 0;
+}
+footer .main_center .lenta li:last-child::after {
+  content: "";
+}
+footer .main_center .sam_footer {
+  width: 100%;
+  height: 65%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2%;
+}
+footer .main_center .sam_footer .left {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2%;
+}
+footer .main_center .sam_footer .left article {
+  width: 48%;
+  height: 48%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--center_bg);
+  border: 1px solid var(--center_bg);
+  border-radius: 15px;
+}
+footer .main_center .sam_footer .left article .center_art {
+  width: 80%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+footer .main_center .sam_footer .left article .center_art .verh {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .main_center .sam_footer .left article .center_art .verh img {
+  width: 4vw;
+  height: 4vw;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+footer .main_center .sam_footer .left article .center_art .verh button {
+  width: 2.5vw;
+  height: 2.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid var(--gray_text);
+  border-radius: 100%;
+  cursor: pointer;
+}
+footer .main_center .sam_footer .left article .center_art .verh button img {
+  width: 50%;
+  height: auto;
+}
+footer .main_center .sam_footer .left article .center_art .niz {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+footer .main_center .sam_footer .left article .center_art .niz h6 {
+  font-family: "Roboto Flex";
+  font-size: 30px;
+  color: var(--white-orange);
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+footer .main_center .sam_footer .left article .center_art .niz p {
+  font-family: "Roboto Mono";
+  font-size: 13px;
+  color: var(--gray_text);
+  text-align: left;
+}
+footer .main_center .sam_footer .right {
+  width: 58%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2%;
+}
+footer .main_center .sam_footer .right .verh {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--center_bg);
+  border-radius: 15px;
+}
+footer .main_center .sam_footer .right .verh .center_vse {
+  width: 80%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+footer .main_center .sam_footer .right .verh .center_vse ul {
+  width: 23%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+footer .main_center .sam_footer .right .verh .center_vse ul h3 {
+  font-family: "Roboto Mono";
+  font-size: 16px;
+  color: var(--white-orange);
+  text-align: left;
+  margin-bottom: 20px;
+}
+footer .main_center .sam_footer .right .verh .center_vse ul a {
+  font-family: "Roboto Mono";
+  font-size: 13px;
+  color: var(--gray_text);
+  text-decoration: none;
+  margin-bottom: 12px;
+  transition: 0.3s all ease;
+}
+footer .main_center .sam_footer .right .verh .center_vse ul a:hover {
+  color: var(--orange_text);
+}
+footer .main_center .sam_footer .right .verh .center_vse ul div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+footer .main_center .sam_footer .right .verh .center_vse ul div a {
+  margin-bottom: 0;
+}
+footer .main_center .sam_footer .right .verh .center_vse ul div p {
+  font-family: "Roboto Mono";
+  font-size: 11px;
+  color: var(--gray_text);
+  background: var(--black_bg);
+  padding: 3px 8px;
+  border-radius: 5px;
+}
+footer .main_center .sam_footer .right .sered {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--center_bg);
+  border-radius: 15px;
+}
+footer .main_center .sam_footer .right .sered .center_sered {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .main_center .sam_footer .right .sered .center_sered .pravo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+footer .main_center .sam_footer .right .sered .center_sered .pravo h6 {
+  font-family: "Roboto Mono";
+  font-size: 12px;
+  color: var(--gray_text);
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+footer .main_center .sam_footer .right .sered .center_sered .pravo h3 {
+  font-family: "Roboto Flex";
+  font-size: 24px;
+  color: var(--white-orange);
+  text-align: left;
+  text-transform: uppercase;
+}
+footer .main_center .sam_footer .right .sered .center_sered .levo {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px;
+}
+footer .main_center .sam_footer .right .sered .center_sered .levo input {
+  width: 70%;
+  height: 50px;
+  background: var(--center_bg);
+  border: none;
+  padding: 0 20px;
+  font-family: "Roboto Mono";
+  font-size: 13px;
+  color: var(--gray_text);
+  outline: none;
+  border-bottom: 1px solid var(--gray_text);
+}
+footer .main_center .sam_footer .right .sered .center_sered .levo input::-moz-placeholder {
+  color: var(--gray_text);
+}
+footer .main_center .sam_footer .right .sered .center_sered .levo input::placeholder {
+  color: var(--gray_text);
+}
+footer .main_center .sam_footer .right .sered .center_sered .levo button {
+  width: 2.5vw;
+  height: 2.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid var(--gray_text);
+  border-radius: 100%;
+  cursor: pointer;
+}
+footer .main_center .sam_footer .right .sered .center_sered .levo button img {
+  width: 50%;
+  height: auto;
+}
+footer .main_center .sam_footer .right .niz {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--center_bg);
+  border-radius: 15px;
+}
+footer .main_center .sam_footer .right .niz .center_n {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .main_center .sam_footer .right .niz .center_n p {
+  font-family: "Roboto Mono";
+  font-size: 13px;
+  color: var(--gray_text);
+  text-align: left;
+}
+footer .main_center .sam_footer .right .niz .center_n div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+}
+footer .main_center .sam_footer .right .niz .center_n div p {
+  font-family: "Roboto Mono";
+  font-size: 13px;
+  color: var(--gray_text);
+  cursor: pointer;
+}
+footer .main_center .sam_footer .right .niz .center_n div a {
+  font-family: "Roboto Mono";
+  font-size: 13px;
+  color: var(--gray_text);
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */
